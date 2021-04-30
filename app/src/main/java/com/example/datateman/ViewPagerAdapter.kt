@@ -5,7 +5,7 @@ import androidx.fragment.app.FragmentActivity
 import androidx.viewpager2.adapter.FragmentStateAdapter
 
 class ViewPagerAdapter(fragmentActivity: FragmentActivity) :
-        FragmentStateAdapter(fragmentActivity) {
+    FragmentStateAdapter(fragmentActivity) {
     private val JUMLAH_MENU = 3
 
     override fun createFragment(position: Int): Fragment {
@@ -18,6 +18,6 @@ class ViewPagerAdapter(fragmentActivity: FragmentActivity) :
     }
 
     override fun getItemCount(): Int {
-       return JUMLAH_MENU
+        return JUMLAH_MENU
     }
 }
